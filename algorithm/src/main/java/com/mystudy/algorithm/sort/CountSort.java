@@ -1,7 +1,7 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.sort;
 /**
  * @desc Count Sort algorithm
- * @author 58
+ * @author 
  *
  */
 public class CountSort {
@@ -11,12 +11,18 @@ public class CountSort {
         int[] B=countSort(A, 5);
         for(int i=0;i<A.length;i++)
         {
-            System.out.println((i+1)+"th:"+B[i]);
+            System.out.print((i+1)+"th:"+B[i]);
         }
 	}
+	/**
+	 * 
+	 * @param array 待排序数组
+	 * @param k 数组中的最大值
+	 * @return
+	 */
 	private static int[] countSort(int[] array,int k)
     {
-        int[] C=new int[k+1];//构造C数组
+        int[] C=new int[k+1];//构造C数组,大小为最大值-最小值+1即例中(5-0)+1 = 6
         int length=array.length,sum=0;//获取A数组大小用于构造B数组  
         int[] B=new int[length];//构造B数组
         for(int i=0;i<length;i++)

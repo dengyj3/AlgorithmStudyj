@@ -1,12 +1,12 @@
 package com.mystudy.algorithm;
 /**
- * �۰�����㷨
+ * 二分法查找
  * @author 
  *
  */
 public class BinarySearch {
 	/**
-	 * �ǵݹ��㷨
+	 * 非递归
 	 * @param a
 	 * @param num
 	 * @return
@@ -20,7 +20,7 @@ public class BinarySearch {
 		int mid = (startPos + endPos) / 2;
 		while (startPos <= endPos) {
 			if (num == a[mid]) {
-				return "Array�±�: " + mid;
+				return "Array found : " + mid;
 			}else if (num > a[mid]) {
 				startPos = mid + 1;
 			}else {
@@ -28,9 +28,9 @@ public class BinarySearch {
 			}
 			mid = (startPos + endPos) / 2;
 		}
-		return "�������޸���ֵ";
+		return "not found : " + num;
 	}
-	//�ݹ��㷨
+	//递归
 	public static int binarySearch(int[] args, int i, int startPos, int endPos) {
 		if (args == null || startPos > endPos) {
 			return -1;

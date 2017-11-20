@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.sort;
 /* 
  * Java实现快速排序算法 
  * author:wyr 
