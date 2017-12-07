@@ -12,7 +12,6 @@ package com.mystudy.algorithm;
 (5) min1和min2更小者，即为所求。
 
 
- * @author 58
  *
  */
 public class SumIsZero {

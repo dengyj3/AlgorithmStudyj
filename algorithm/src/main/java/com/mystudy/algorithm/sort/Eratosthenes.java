@@ -1,5 +1,11 @@
-package com.mystudy.algorithm;
-
+package com.mystudy.algorithm.sort;
+/**
+ * 给定正整数N,求小于等于N的全部素数
+ * 1. 将2到N写成一排;
+ * 2. 记排头元素为x,则x是素数;除x以外,将x的倍数全部划去;
+ * 3. 重复以上操作,直到没有元素被划去,则剩余的即小于等于N的全部素数.
+ *
+ */
 public class Eratosthenes {
 
 	public static void main(String[] args) {
@@ -8,7 +14,7 @@ public class Eratosthenes {
 		eratosthenes(a, n);
 		for(int i = 0; i<n+1; i++){
 			if (a[i]) {
-				System.out.print(i + "\t");
+				System.out.print(i + ",");
 			}
 		}
 	}

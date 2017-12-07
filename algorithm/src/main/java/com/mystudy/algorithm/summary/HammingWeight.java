@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.summary;
 
 public class HammingWeight {
 	public static void main(String[] args) {

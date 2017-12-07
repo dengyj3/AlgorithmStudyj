@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.sort;
 /**
  * 迷离傍地走算法
  * 为庆祝强汉文盛世暨废除和亲七百周年，武后决定拜孙武和王翦对春夏秋冬四官细君、昭君、探春、文成做军事训练

@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.dp;
 /**
  * 股票的最大收益
  * 

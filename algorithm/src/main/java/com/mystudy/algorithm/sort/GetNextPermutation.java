@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.sort;
 /**
  * 字符串全排列的非递归算法,找到下一个比本身大的字符串
  *

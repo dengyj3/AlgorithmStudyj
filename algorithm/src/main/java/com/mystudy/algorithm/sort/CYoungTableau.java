@@ -1,4 +1,4 @@
-package com.mystudy.algorithm;
+package com.mystudy.algorithm.sort;
 
 import java.util.Random;
 
