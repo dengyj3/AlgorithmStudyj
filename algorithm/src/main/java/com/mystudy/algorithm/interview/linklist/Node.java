@@ -145,6 +145,23 @@ public class Node {
         return res;
     }
 
+    /**
+     * 判断一个单链表是否有环
+     * @param L
+     * @return
+     */
+    public static boolean hasCircle(Node L)
+    {
+        Node slow=L;//slow表示从头结点开始每次往后走一步的指针
+        Node fast=L;//fast表示从头结点开始每次往后走两步的指针
+        while(fast!=null && fast.next!=null)
+        {
+            if(slow==fast) return true;//p与q相等，单链表有环
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return false;
+    }
     public static void main(String[] args) {
 //        Node head1 = new Node(4);
 //        head1.next = new Node(5);
@@ -165,5 +182,6 @@ public class Node {
 //        System.out.println(""+isPalindrome1(head));
 //        System.out.println("" + isPalindrome2(head));
         System.out.println("" + isPalindrome3(head));
+        System.out.println(hasCircle(head));
     }
 }
