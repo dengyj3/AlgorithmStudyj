@@ -58,6 +58,6 @@ public class Hanoi {
         stackA.push(3);
         stackA.push(2);
         stackA.push(1);
-        move(stackA,new Stack<Integer>(),new Stack<>(),5);
+        move(stackA,new Stack<Integer>(),new Stack<Integer>(),5);
     }
 }

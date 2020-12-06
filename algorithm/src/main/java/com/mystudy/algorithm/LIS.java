@@ -8,7 +8,7 @@ package com.mystudy.algorithm;
 public class LIS {
 
     public static int lis1(int a[], int length) {
-        int longest[] = new int[length];
+        int[] longest = new int[length];
         int i, j;
         for (i = 0; i < length; i++) {
             longest[i] = 1;
