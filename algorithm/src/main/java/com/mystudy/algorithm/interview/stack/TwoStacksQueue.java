@@ -41,7 +41,7 @@ public class TwoStacksQueue {
     }
 
     public static void main(String[] args) {
-        int a[] = {1, 2, 3, 4, 5};
+        int[] a = {1, 2, 3, 4, 5};
         TwoStacksQueue twoStacksQueue = new TwoStacksQueue();
         for (int i = 0; i < a.length; i++) {
             twoStacksQueue.add(a[i]);
@@ -51,7 +51,8 @@ public class TwoStacksQueue {
         System.out.println(twoStacksQueue.poll());
         System.out.println(twoStacksQueue.poll());
         System.out.println(twoStacksQueue.poll());
+        System.out.println(twoStacksQueue.peek());
         System.out.println(twoStacksQueue.poll());
-        System.out.println(twoStacksQueue.poll());
+//        System.out.println(twoStacksQueue.poll());
     }
 }

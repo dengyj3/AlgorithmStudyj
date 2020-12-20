@@ -34,7 +34,7 @@ public class PalindromeSolution {
             return false;
         }
         int div = 1;
-        while (x/div>=10) {
+        while (x / div >= 10) {
             div *= 10;
         }
         while (x > 0) {
@@ -43,7 +43,7 @@ public class PalindromeSolution {
             if (left != right) {
                 return false;
             }
-            x = (x%div)/10;
+            x = (x % div) / 10;
             div /= 100;
         }
         return true;

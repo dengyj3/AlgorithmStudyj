@@ -1,5 +1,8 @@
 package com.mystudy.algorithm.string;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * 求字符串的全排列
  * 递归的思想
@@ -11,7 +14,10 @@ package com.mystudy.algorithm.string;
 public class Permutation {
     public static void main(String[] args) {
         int a[] = {1, 3, 3, 4};
-        permutation(a, 0);
+//        permutation(a, 0);
+
+        int[] nums = {1,2,3};
+        permutation(nums);
     }
 
     /**
@@ -117,6 +123,27 @@ public class Permutation {
             temp = a[i];//交换a[i],a[n]
             a[i] = a[n];
             a[n] = temp;
+        }
+    }
+
+    static List<List<Integer>> res = new LinkedList<>();
+    public static void permutation(int[] arr) {
+        LinkedList<Integer> stack = new LinkedList<>();
+        sort(arr, stack);
+        System.out.println(res);
+    }
+    public static void sort(int[] nums, LinkedList<Integer> stack) {
+        if (nums.length == stack.size()) {
+            res.add(new LinkedList<>(stack));
+            return;
+        }
+        for (int i=0; i<nums.length; i++) {
+            if (stack.contains(nums[i])) {
+                continue;
+            }
+            stack.add(nums[i]);
+            sort(nums, stack);
+            stack.removeLast();
         }
     }
 }
